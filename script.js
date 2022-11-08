@@ -34,7 +34,7 @@ const createDots=function(){
 
     allTestimonials.forEach((_,i)=>{
 
-        dotsContainer.insertAdjacentHTML("beforeend",`<button class="dots_dot" data-slide="${i}"></button>`);
+        dotsContainer.insertAdjacentHTML("beforeend",`<button class="dots_dot" data-slide="${i} aria-label="view testimonial"></button>`);
     })
 }
 
