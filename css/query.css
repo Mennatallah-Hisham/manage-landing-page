@@ -1,0 +1,224 @@
+/*******************************************************/
+/*******************768*********************/
+
+@media(min-width:768px){
+    .container{
+        width:90%;
+    }
+
+       
+.heading-secondary{
+    margin: 0;
+    text-align: left;
+    font-size: 3.4rem;
+}
+
+
+   
+.flex-row{
+    display: flex;
+    align-items: flex-start;
+    justify-content:center;
+    gap:6rem;
+   
+}
+    /**** hero***/
+    .sec-hero{
+        background-position-x:92rem;
+        background-position-y:-5rem;
+        background-size:65rem;
+        height:100vh;
+        position: relative;
+     
+    
+    }
+    .hero-main{
+        position: absolute;
+        top:60%;
+        left:50%;
+        transform: translate(-50%,-50%);
+      
+    }
+    .hero-content{
+        max-width: 60rem;
+        margin-inline:auto;
+        background-image:none;
+    }
+
+
+    /**** testimonials ***/
+.sec-testimonials .heading-secondary{
+  
+    text-align: center;
+}
+  
+
+/*** cta ***/
+  
+    .sec-cta .container{
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .sec-cta .heading-secondary{
+        text-align: left;
+        max-width:50rem;
+        margin:0;
+    
+    }
+
+    /*** different ***/
+    .sec-different{
+        background-image: url(../images/bg-tablet-pattern.svg);
+        background-position-x:-40rem;
+        background-position-y:0rem;
+        background-size:60rem;
+        background-repeat: no-repeat;
+  
+    }
+    .different-intro{
+        max-width: 38rem;
+        margin: 0;
+  
+        text-align: left;
+    }
+    .different-steps{
+        max-width:36rem;
+
+    }
+
+ 
+    
+}
+
+
+
+/*******************************************************/
+/*******************900*********************/
+
+@media(min-width:900px){
+    
+    /*** general ***/
+.heading-primary{
+    font-size: 5rem;
+
+}
+.heading-secondary{
+    font-size: 3.6rem;
+}
+
+p{
+    font-size: 1.8rem;
+}
+
+/******* header *******/
+.main-nav{
+    display: block;
+}
+.header-btn{
+visibility: visible;
+}
+.main-nav-list{
+    display: flex;
+    justify-content: space-between;
+    gap:2rem;
+    
+}
+
+.main-nav-item:link,
+.main-nav-item:visited{
+    font-size: 1.8rem;
+    color:var(--clr-secondary);
+}
+
+.main-nav-item:hover,
+.main-nav-item:active{
+
+    color:var(--clr-primary);
+}
+    .btn-main-nav{
+        display: none;
+    }
+
+    /*****hero*****/
+
+    .hero-flex{
+        flex-direction: row;
+            }
+        
+
+/********* cta **********/
+   
+    .sec-cta{
+        background-image: url("../images/bg-simplify-section-desktop.svg");
+    }
+
+
+   
+ 
+    /******* different **********/
+    .sec-different{
+        margin-bottom: 0;
+    }
+
+    .intro-txt{
+        max-width:45rem;
+    }
+
+    .different-intro{
+        max-width: 60rem;
+      
+    }
+    .different-steps{
+        max-width:60rem;
+
+    }
+    .step-header{
+        background-color: transparent;
+    }
+    .step-txt{
+        margin-left:13rem;
+    }
+    /*******testimonials********/
+
+    .testimonial-card{
+        max-width: 60rem;
+    }
+
+    /******footer*******/
+    .footer-flex{
+        flex-direction: row;
+        justify-content: space-between;
+
+    }
+    .footer-nav{
+      
+        gap:10rem;
+    }
+    .social-links{
+        margin-top:6rem;
+    }
+    .cp-right{
+     
+       text-align: right;
+    
+    }
+}
+
+
+/*******************************************************/
+/*******************1200*********************/
+
+@media(min-width:1200px){
+
+    .container{
+  
+        max-width: 144rem;
+    }
+
+    .flex-row{
+      
+        gap:12rem;
+       
+    }
+}

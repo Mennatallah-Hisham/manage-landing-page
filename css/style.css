@@ -1,0 +1,493 @@
+:root{
+
+    --clr-primary: #f25f3b;
+    --clr-primary-tint:#fbcfc4bc;
+ --clr-secondary: hsl(228, 39%, 23%);
+
+    --clr-title: hsl(228, 39%, 23%);
+
+--clr-txt: hsl(227, 12%, 61%);
+--clr-bg-dark: hsl(233, 12%, 13%);
+--Very-Pale-Red: hsl(13, 100%, 96%);
+--Light-Gray: hsl(0, 0%, 98%);
+
+
+--margin-sm:2rem;
+--margin-m:4rem;
+--margin-l:8rem;
+
+
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    overflow-x:hidden;
+}
+
+
+/*************************************************/
+ /********* GENERAL ***********/
+/**************************************************/
+.heading-primary{
+    font-size: 4rem;
+   text-align: center;
+   color:var(--clr-title);
+   margin:4rem auto;
+   line-height: 0.9;
+   width:98%;
+}
+.heading-secondary{
+    font-size: 3rem;
+   line-height: 1.3;
+  
+    text-align: center;
+    max-width: 35rem;
+    margin-inline:auto;
+   
+
+}
+a:link{
+    display: inline-block;
+    cursor: pointer;
+    text-decoration: none;
+    text-transform:capitalize;
+}
+
+button{
+    text-transform: uppercase;
+    cursor:pointer;
+    display: inline-block;
+}
+
+ul{
+    list-style: none;
+}
+img{
+    max-width: 100%;
+    display:block;
+
+}
+
+section{
+    margin:8rem auto;
+}
+span{
+    display: inline-block;
+}
+
+
+/*************************************************/
+ /********* re-usuable classes ***********/
+/**************************************************/
+
+.container{
+    width:100%;
+    max-width: 120rem;
+    margin-inline: auto;
+  
+}
+
+
+.hide{
+    display: none;
+
+}
+
+.hide-overflowY{
+    overflow-y:hidden ;
+}
+
+.margin-r-sm{
+    margin-right: var(--margin-sm);
+}
+.margin-l-sm{
+    margin-left:var(--margin-sm);
+}
+
+.margin-b-sm{
+    margin-bottom: var(--margin-sm);
+}
+.margin-t-sm{
+    margin-top: var(--margin-sm);
+}
+.margin-t-m{
+    margin-top: var(--margin-m);
+}
+
+/*************************************************/
+ /********* Header ***********/
+/**************************************************/
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:2rem 1rem;
+    position: relative;
+}
+.header .logo{
+
+    height:3rem;
+    z-index: 999;
+}
+
+.main-nav{
+    display: none;
+}
+
+.btn-main-nav{
+    background-color: transparent;
+    border:none;
+    cursor: pointer;
+    z-index: 999;
+}
+
+.open-nav .main-nav{
+    position: absolute;
+    top:0;
+    left:0;
+    display: block;
+   background-color: rgba(0, 0, 0, 0.256);
+    width:100%;
+    height:100vh;
+    display: flex;
+      justify-content: center;
+align-items:flex-start;
+
+
+}
+.open-nav .main-nav-list{
+    margin-top:10rem;
+ 
+background-color: white;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+gap:2rem;
+width:32rem;
+border-radius: 0.5rem;
+
+padding:3rem 0;
+
+}
+.open-nav .main-nav-item:link,
+.open-nav .main-nav-item:visited{
+    font-size: 1.8rem;
+    color:var(--clr-secondary);
+    font-weight: 600;
+}
+
+.header-btn{
+visibility: hidden;
+    background-color:var(--clr-primary);
+    padding:0.8rem 2rem;
+border-radius: 2rem;
+font-size: 1.6rem;
+color: var(--Light-Gray);
+}
+/*************************************************/
+ /********* Hero ***********/
+/*********************************************/
+.sec-hero{
+    margin-top:0;
+    background-image: url(../images/bg-tablet-pattern.svg);
+    background-position-x:10rem;
+    background-position-y:-5rem;
+    background-size:40rem;
+    background-repeat: no-repeat;
+}
+.hero-flex{
+    display: flex;
+    flex-direction: column-reverse;
+    
+}
+.hero-content{
+    padding-bottom:10rem;
+    text-align: center;
+    font-size: 1.8rem;
+    color:var(--clr-txt);
+    background-image: url(../images/bg-tablet-pattern.svg);
+    background-position-x:22rem;
+    background-position-y: 10rem;
+    background-size:30rem;
+    background-repeat: no-repeat;
+ 
+    
+ 
+
+}
+
+.hero-txt{
+    margin:2rem auto;
+    max-width: 36rem;
+}
+.hero-img-box{
+    margin-inline:auto;
+}
+/*************************************************/
+ /*********what's different***********/
+/**************************************************/
+
+.different-intro{
+    max-width: 34rem;
+    margin:4rem auto;
+    text-align: center;
+    color:var(--clr-txt);
+    line-height: 1.6;
+    font-size: 1.8rem;
+  
+
+    
+}
+.different-intro .heading-secondary{
+    color:var(--clr-title);
+    margin-bottom: 4rem;
+}
+.step-header{
+ 
+  width:36rem;
+  margin-inline:auto;
+    background-color: var(--clr-primary-tint);
+    display: flex;
+    align-items: center;
+   gap:2rem;
+   border-top-left-radius: 2rem;
+   border-bottom-left-radius: 2rem;
+
+
+    
+}
+.step-title{
+    color:var(--clr-secondary);
+    font-weight: 600;
+    font-size: 1.6rem;
+   
+  
+}
+.step-txt{
+    max-width:34rem;
+
+    color:var(--clr-txt);
+    margin:2rem auto;
+    font-size: 1.6rem;
+
+}
+.number{
+    background-color: var(--clr-primary);
+    padding:0.2rem 2rem;
+    border-radius:2rem;
+    color:#fff;
+    font-size: 1.8rem;
+}
+
+/*************************************************/
+ /********* testimonials ***********/
+/**************************************************/
+
+.sec-testimonials{
+text-align:center;
+
+
+
+}
+.sec-testimonials .heading-secondary{
+color:var(--clr-title);
+margin:4rem auto;
+}
+
+.testimonials{
+   
+
+    overflow-x: hidden;
+ 
+
+    min-width:36rem;
+    max-width: 60rem;
+    margin-inline:auto;
+    padding:10rem 3rem;
+    display:flex;
+    position: relative;
+    height: 30rem;
+}
+
+
+.testimonial-card{
+  
+    min-width:100%;
+    background-color: var(--Light-Gray);
+    margin:2rem auto;
+    position: relative;
+    padding:6rem 1rem;
+  transition:transform 1s;
+  position: absolute;
+  top:2rem;
+  left:0;
+
+   
+}
+
+.dots_dot{
+    padding:0.5rem;
+    border-radius: 50%;
+    border:none;
+    margin:0.2rem
+}
+
+.dots_dot_active{
+    background-color: var(--clr-primary);
+}
+.user-img {
+height:8rem;
+position: absolute;
+top:-3rem;
+left:50%;
+transform: translateX(-50%);
+
+}
+
+.user{
+    color:var(--clr-title);
+    font-weight:600;
+    margin:1rem auto;
+
+}
+.testimonial-text{
+
+    color:var(--clr-txt);
+    font-size: 1.6rem;
+    line-height: 1.6;
+}
+.main-btn:link,
+.main-btn:visited
+{
+    background-color:var(--clr-primary);
+    padding:0.8rem 2rem;
+border-radius: 2rem;
+font-size: 1.6rem;
+color: var(--Light-Gray);
+
+
+}
+
+
+
+
+/*************************************************/
+ /********* CTA ***********/
+/**************************************************/
+
+
+
+.sec-cta{
+    background-color: var(--clr-primary);
+    margin-bottom: 0;
+    padding:10rem 0;
+    color:var(--Light-Gray);
+    text-align: center;
+    background-image: url("../images/bg-simplify-section-mobile.svg");
+    background-repeat: no-repeat;
+}
+
+
+.sec-cta .heading-secondary{
+    color:inherit;
+
+}
+
+
+.cta-btn:link,
+.cta-btn:visited{
+    background-color:var(--Light-Gray);
+    padding:0.8rem 2rem;
+border-radius: 2rem;
+font-size: 1.6rem;
+color: var(--clr-primary);
+
+
+}
+
+.btn:hover{
+    opacity: 0.7;
+}
+
+
+/*************************************************/
+ /********* FOOTER ***********/
+/**************************************************/
+
+.footer{
+    background-color:var(--clr-bg-dark);
+    font-family: 'Be Vietnam Pro', sans-serif;
+    padding:4rem 0;
+    text-align: center;
+}
+.footer-flex{
+    display: flex;
+    flex-direction:column-reverse;
+    align-items: center;
+    justify-content: center;
+    gap:2rem;
+}
+
+
+
+.footer input{
+    padding:0.6rem 2rem;
+    border-radius: 2rem;
+    border:none;
+
+}
+
+.form-btn{
+    background-color: var(--clr-primary);
+    padding:0.5rem 2rem;
+    border-radius: 2rem;
+    border:none;
+    color:white;
+}
+
+.footer-nav{
+    display: flex;
+    gap:6rem;
+}
+.social-links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:2rem;
+    margin:2rem auto;
+
+}
+
+
+
+.sec-nav-item:link,
+.sec-nav-item:visited{
+    font-size: 1.4rem;
+    color:var(--Light-Gray);
+    padding:0.5rem;
+    
+}
+
+.sec-nav-item:hover,
+.sec-nav-item:active{
+    color:var(--clr-primary);
+
+}
+
+.footer .logo{
+    margin-inline: auto;
+}
+
+.cp-right{
+    color:var(--clr-txt);
+    font-size: 1.2rem;
+
+}
