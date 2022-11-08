@@ -68,7 +68,7 @@ initSlider();
 
 dotsContainer.addEventListener("click",function(e){
 
-    console.log(e.target);
+  
     if(e.target.classList.contains("dots_dot")){
       const slide=e.target.getAttribute("data-slide");
         activateDot(slide);
